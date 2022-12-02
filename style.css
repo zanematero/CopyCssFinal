@@ -1,5 +1,6 @@
 body {
     margin: 0%;
+    background-color: rgb(195, 254, 195);
 }
 
 #mainScreen {
@@ -39,6 +40,16 @@ a {
     color: black;
 }
 
+a:hover {
+    color: green;
+    transition: 1s ease-out;
+    font-weight: bolder;
+}
+
+a:not(:hover) {
+    transition: ease-in-out 1s;
+}
+
 #centerMain {
     position: absolute;
     top: 50%;
@@ -46,7 +57,7 @@ a {
     width: 20%;
     text-align: center;
     margin: auto;
-    color: aqua;
+    color: white;
 }
 
 #centerMain > button {
@@ -55,7 +66,23 @@ a {
     background-color: white;
     box-shadow: 0em 0.5em 0.5em 0em rgb(59, 59, 59);
     border-radius: 2em;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
 }
+
+#centerMain > button:hover {
+    transition: 1s;
+    font-weight: bolder;
+    color: black;
+    background-color: lightgrey;
+    transition-timing-function: ease-out;
+}
+
+#centerMain > button:not(:hover){
+    transition: 1s ease-in-out;
+   }
 
 #secondScreen > h1 {
     color: gray;
@@ -86,6 +113,7 @@ span {
     width: 30vw;
     height: 30vh;
     box-shadow: 0em 0.5em 0.5em 0em rgb(59, 59, 59);
+    border-radius: 2em;
 }
 
 #thirdScreen {
@@ -111,6 +139,7 @@ span {
     display: flex;
     align-items: center;
     padding: 0% 7.5% 7.5% 7.5%;
+    margin-top: -5em;
 }
 
 #popUp > img {
@@ -121,7 +150,7 @@ span {
 #popUp > h3 {
     position: absolute;
     left: 7em;
-    bottom: -50em;
+    bottom: -47em;
     width: 4em;
     height: 2em;
     background-color: white;
@@ -137,3 +166,37 @@ span {
     margin-left: 1.5em;
 }
 
+#title {
+    font-weight: bolder;
+    color: lightgray;
+    font-size: larger;
+    background-color: darkgreen;
+    border-radius: 2em;
+    width: 6em;
+    height: 4em;
+}
+
+#sidePopUp > button {
+    border: none;
+    background-color: darkgreen;
+    color: white;
+    width: 6em;
+    height: 3em;
+    font-weight: bolder;
+    font-size: larger;
+    border-radius: 2em;
+}
+
+#sidePopUp > button:hover {
+    width: 8em;
+    height: 4em;
+    transition: 1s;
+    font-weight: bolder;
+    color: black;
+    background-color: lightgrey;
+    transition-timing-function: ease-out;
+}
+
+#sidePopUp > button:not(:hover){
+    transition: 1s ease-in-out;
+   }
