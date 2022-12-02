@@ -137,10 +137,3 @@ span {
     margin-left: 1.5em;
 }
 
-#backdrop {
-    position: absolute;
-    left: 0em;
-    width: 25px;
-    height: 25px;
-    background-color: grey;
-}
